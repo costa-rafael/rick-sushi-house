@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Open+Sans&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+:root{
+    font-size: 62.5%;
+    --laranja:#ff7c00;
+    --azul:#30405d;
+    --branco-off: #f9f9f9;
+
+    --font-1: 'Montserrat', sans-serif;
+    --font-2: 'Open Sans', sans-serif;
+
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1366px;
+    justify-content: space-between;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+}
+
+.text-flex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.banner span.linha1{
+    color: #f9f9f9;
+    font-size: 8.5rem;
+    margin-top: -6rem;
+}
+
+.banner span.linha2{
+    color: var(--laranja);
+    font-size: 15.3rem;
+    font-weight: 900;
+    line-height: 0.5;
+}
+
+.banner span.linha3{
+    color: #f9f9f9;
+    font-size: 4.4rem;
+    line-height: 1.9;
+}
+
+.banner span.linha4{
+    color: #f9f9f9;
+    font-family: var(--font-2) ;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+
+.banner span.linha4 strong{
+    color: var(--laranja);
+    text-transform: uppercase;
+}
+
+.foto{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+body{   
+ font-size: 1.6rem;
+ background: url(https://gruporick.com/imagens/bg-banner.png) #f9f9f9 repeat-x top; 
+ width: 100%;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ color: var(--laranja);
+}
+
+header {
+    margin-top: 30px;
+}
+
+.banner, .cartoes, .sobre, .entrega{
+   max-width: 1366px;
+   width: 100%;
+   margin: 0 auto;
+   display: grid;
+   overflow: hidden;
+   
+}
+
+.regua-topo{
+    color: var(--azul);
+    max-width: 1366px;
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+   margin: 7rem auto 8rem;
+}
+
+.regua-topo span{
+    font-size: 2.4rem;
+    line-height: 0.8;
+}
+
+.numero{
+    font-size: 6rem;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.regua-topo i{
+    font-size: 5.4rem;
+}
+
+.box-1, .box-2, .box-3{
+    display: flex;
+    align-items: center;
+}
+
+.box-2, .box-3{
+    cursor: pointer;
+}
+
+.regua-topo span{
+    font-size: 2.4rem;
+    color: var(--laranja);
+}
+
+
+
+.padding-x{
+    padding: 0 40px;
+}
+
+
+.banner{
+    grid-template-columns: 45% 55%;
+    margin-top:1.5rem;
+}
+
+.banner img{
+    width: 120%;
+    height: auto;
+    margin-left: -10rem;
+    z-index: 10;
+}
+
+section{    
+    width: 100%;
+}
+
+.foto{
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    line-height: 0;
+}
+
+.scroll-anime{
+    height: auto;
+    border: solid #888 1px;
+    border-radius: 14px;
+}
+
+nav{
+    align-items: center;
+    display: flex
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    margin-left: 20px;
+    list-style: none;
+    color: var(--branco-off);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--branco-off);
+    transition: all 0.6s;   
+}
+
+nav ul li a i{
+    margin-right: 0.6rem;
+}
+
+nav ul li a:hover{
+    color: var(--laranja);
+}
+
+nav ul li a.button-top{
+    padding: 20px 30px;
+    border: 2px solid var(--laranja);
+    border-radius: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav ul li a.button-top:hover{
+    border: 2px solid var(--branco-off);
+    color: var(--laranja);
+}
+
+nav ul li:nth-child(3){
+    display: none;
+}
+
+.hiddenLeft{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5);
+    transform: translateX(-100%);
+
+}
+
+.hiddenReverse{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5);
+    transform: translateX(100%);
+}
+
+.hiddenTop{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5);
+    transform: translateY(-20%);
+}
+
+.show{
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+}
+
+.showTop{
+    /* opacity: 0;
+    transform: translateY(0);
+    filter: blur(0); */
+    display: none;
+}
+
+
+.text-esq{
+    align-items:flex-start;
+    text-align: right;
+}
+
+
+.text-dir{
+    align-items:flex-end;
+    text-align: right;
+}
+
+.cartoes{
+    grid-template-columns: 35% 65%;    
+    margin-top: 6rem;
+    margin-bottom: 8.0rem;
+}
+
+.sobre{
+    grid-template-columns: 50% 50%;    
+}
+
+.bg-sobre{
+    width: 100%;
+    background-color: #ff7c00;
+    background: url(https://gruporick.com/imagens/bg-sobre.png) repeat-x top; ;
+}
+
+.sobre  h3{
+    font-size: 5.3rem;
+    font-weight: 600;
+    line-height: 0;
+}
+
+.sobre  h2, .cartoes h2{
+    font-size: 5.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.7;
+}
+
+.cartoes h2{    
+    line-height: 0.8;
+    color: var(--azul);
+}
+
+.cartoes h3{
+    font-size: 4.0rem;
+    font-weight: 400;
+}
+
+.cartoes .bandeiras{
+    width: 85%;
+    margin-top: 60px;
+}
+
+
+.sobre p{
+    font-family: var(--font-2);
+    color: var(--branco-off);
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.entrega{
+    grid-template-columns: 46% 54%;
+    background-color: #fff;
+    
+}
+
+.entrega img {
+    width: 120%;
+    height: auto;
+    position: relative;
+    margin-left: -12rem;
+}
+
+.banner .banner-btn, .sobre-btn{
+    background-color: var(--laranja);
+    max-width: 70%;
+    text-align: center;
+    padding: 2rem ;
+    color: var(--branco-off);
+    margin-top: 3rem;
+    display: block;
+    border-radius: 35px;
+    
+}
+
+a.banner-btn {
+    text-decoration: none;
+    font-family: var(--font-1);
+    font-weight: 600;
+    font-size: 2rem;
+    border: 2px solid var(--laranja);
+    transition: all 0.5s;
+
+}
+a.banner-btn:hover, a.button-bandeiras:hover, a.sobre-btn:hover{
+    border: 2px solid;
+    background-color: transparent;
+    transform: translateY(-7px);
+}
+
+a.button-bandeiras:hover{
+    border-color: var(--azul);
+    background-color: var(--azul)!important;
+}
+    
+a.button-bandeiras, a.sobre-btn{
+    text-decoration: none;
+    max-width: 90%;
+    padding: 2rem 4rem;
+    background-color: var(--laranja);
+    text-align: center;
+    border-radius: 35px;
+    color: var(--branco-off);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--font-2);
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    border: 2px solid var(--laranja);
+    margin-top: 5rem;
+}
+
+main{
+    width: 100%;
+}
+
+.line-white{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 9rem;
+}
+
+/* ====Sobre ===============*/
+
+.sobre img{
+    max-width: 90%;
+    margin-top: 4rem;
+}
+
+/* =======Entrega ================ */
+
+.entrega h4{
+    font-size: 5.6rem;
+    font-weight: 400;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    line-height: 2px!important;
+    margin-bottom: 2rem;
+
+}
+
+.entrega strong {
+    line-height: 5rem;
+}
+
+.entrega p strong {
+    line-height: 0rem;
+}
+
+.entrega p{
+    color: var(--azul);
+    font-size: 2.4rem;
+    
+}
+
+/* ====  regua-footer  ======== */
+
+
+.regua-footer {
+    max-width: 1366px;    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;    
+    padding-bottom: 10rem;
+    color: var(--azul);
+    font-weight: 600;
+}
+
+.ifood, .midia{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bxs-star{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--azul);
+    
+}
+
+.ifood img{      
+    max-width: 90%;  
+}
+
+.midia img{
+    max-width: 70%;
+}
+
+.regua-footer a{
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.regua-footer a:hover{
+    opacity: 1;
+    transform: translateY(-5px);
+    position: relative;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 60px;
+}
+
+footer span{
+    font-family: var(--font-2);
+    font-size: 1.6rem;
+    color: #c4bfbf;
+    font-weight: 500;
+}
+
+footer img{    
+    padding: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+.elevador{    
+    position: fixed;    
+    bottom: 3.5rem;
+    right: 15px;
+    z-index: 110;
+    transition: all 0.4s;
+    
+}
+
+.elevador .bx-chevron-up{
+
+    color: var(--laranja);
+    font-size: 3rem;
+    background-color: var(--azul);
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1200px){
+
+    nav ul li:nth-child(2), nav ul li:nth-child(3), nav ul li:nth-child(1) {display: none;}
+
+    
+
+}
+
+@media  screen and (max-width: 1260px){
+
+    .entrega h4{
+        line-height: 4.6rem!important;
+    }
+    
+}
+
+@media  screen and (max-width: 1070px){
+
+    .entrega img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 1366px){
+
+    .banner img{
+        margin-left: -10rem;
+        
+        margin-top: 4rem;
+    }
+
+    .cartoes {
+        grid-template-columns: 33% 67%;
+    }
+
+    .cartoes h2 {
+        font-size: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+     nav{display: none!important;}
+  }
+
+
+
+@media screen and (max-width: 600px) {
+   
+    .banner, .regua-topo, .cartoes, .sobre, .entrega, .regua-footer {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+  }
+
+  .flex{
+    padding: 0 2rem;
+  }
+
+  header{
+    justify-content: center;
+  }
+
+  .text-flex{
+    align-items: center;
+  }
+
+  .padding-x {
+    padding: 0 2rem;
+}
+
+  .cartoes h2, .sobre h2{
+    font-size: 4rem;
+    line-height: 0.8;
+    text-align: center;
+}
+
+.entrega{
+    gap: 3rem;
+}
+
+.entrega h4 {
+    font-size: 3.6rem;
+    text-align: center;
+    line-height: 2px!important;
+}
+
+.cartoes h3 {
+    font-size: 2.5rem;
+}
+
+.entrega strong {
+    line-height: 3rem;
+}
+
+.entrega p {
+    color: var(--azul);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.ifood, .midia {
+    justify-content: center;
+    flex-direction: column;
+}
+
+  .reverso{
+    order: -1;
+  }
+
+  .midia-icons{
+    display: flex;
+  }
+
+  .banner span.linha1 {
+    font-size: 3.5rem;
+    margin-top: 5rem;
+}
+
+.banner span.linha2{
+    line-height: 0.7;
+    font-size: 10.3rem;
+}
+
+.banner span.linha3{
+    font-size: 3rem;
+}
+
+.banner span.linha4{
+    font-size: 1.5rem;
+}
+
+.banner .banner-btn, .sobre-btn{
+    max-width: 90%;
+    padding: 1.5rem 2rem;
+}
+
+.banner img{
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+
+a.button-bandeiras, a.sobre-btn {
+    padding: 1.5rem 2rem;
+}
+
+.sobre h3{
+    font-size: 3.3rem;
+    line-height: 0.7;
+}
+
+.sobre h2{
+    font-size: 3.4rem;
+    line-height: 0.6;
+}
+
+.sobre p{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.bg-sobre{
+    background: url(https://gruporick.com/imagens/bg-sobre-mobile.jpg) repeat-x top;
+}
+
+.sobre img {
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+}
+
+a.sobre-btn{
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.regua-topo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 5px;
+}
+
+.box-1, .box-2, .box-3{
+    flex-direction: column;
+    width: 90%;
+    background-color: #f2f2f2;
+    /* border: 1px solid var(--azul); */
+    padding: 1rem;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+}
+
+.numero{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.entrega img {
+    width: 100%;
+    margin-left: 0;
+}
+
+.line-white{
+    padding-top: 4rem;
+}
+
+
+}

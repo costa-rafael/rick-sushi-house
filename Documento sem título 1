@@ -1,0 +1,9 @@
+HiddenTop (Esconde o elemento e faz o efeito vir de cima para baixo com efeito de fade usando apenas a propriedade "0pacit: 0" sempre que for usar, rever essa propriedade em seu estado inicial como negativo "transform: translateY(-20%))
+
+hiddenLeft (Esconde o elemento para a esquerda, tendo sua transição da esquerda para a direita, usando apenas a propriedade "opacit: 0" sempre que for usar, rever essa propriedade em seu estado inicial como negativo "transform: translateX(-100%)")
+
+
+
+Landpage criada com efeito no scroll no up e down
+
+Landpage-scroll-animate
