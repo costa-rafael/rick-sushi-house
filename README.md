@@ -30,3 +30,6 @@ Site criado para o grupo Rick. Hoje o grupo tem 9 Marcas entre elas: Rick Sushi,
   <li>🗹 Ilustrator</li>
   <li>🗹 Figma</li>
 </ul>
+
+<h3>Veja o site no link</h3>
+https://gruporick.com/
